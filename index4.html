@@ -4,99 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="main.css"> -->
+    <title>MyWeb</title>
     <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
         body {
-            padding: 40px;
+            direction: rtl;
         }
 
-        .title {
-
-            background-color: lime;
-
-        }
-
-        .img {
-            width: 300px;
-            height: 300px;
-            border-radius: 999px;
-            border: 10px solid red;
-        }
-
-        .table {
-            width: 50%;
-            border: 2px solid black;
-            /* background-color: lightskyblue; */
-        }
-
-        .goals li {
-            color: red;
-        }
-        /* .table-item{
-            border: 2px solid black;
-        } */
-        .table td , .table th{
-            border: 2px solid black;
-        }
-        
-        .item-1 , .item-3{
-            color: rgb(30, 224, 254);
-        }
-        .btn{
-            width: 120px;
-            height: 60px;
+        /* .title {
+            direction: ltr;
             background-color: brown;
-            color: white;
+            display: block;
+        } */
+
+        /* .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+        } */
+        .links {
+            background-color: rgb(229, 249, 119);
+            margin-top: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 16px;
         }
-        .btn:hover{
-            background-color: cornflowerblue;
+
+        a {
+            text-decoration: none;
             color: black;
+        }
+
+        .nav-logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .search {
+            height: 20px;
             width: 300px;
+        }
+
+        .logo {
+            width: 300px;
+            height: 200px;
+            background-color: turquoise;
+        }
+
+        .link1 {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .test {
+            background-color: rgb(171, 171, 255);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
     </style>
 </head>
 
 <body>
-    <button class="btn">Click Here</button>
-    <h1 class="title">John Doe</h1>
-    <h2>web developer</h2>
-    <img class="img" src="image.png" alt="coding image">
-    <h3>Life Goals</h3>
-    <ol class="goals">
-        <li>Hello, ipsum dolor.</li>
-        <li>Hello ipsum dolor sit.</li>
-        <li>Hello, ipsum.</li>
-    </ol>
-    <h3>Hobbies</h3>
-    <ul>
-        <li class="item-1">Lorem, ipsum dolor.</li>
-        <li>Lorem, ipsum dolor.</li>
-        <li class="item-3">Lorem, ipsum dolor.</li>
-    </ul>
-    <h3>Skills</h3>
-    <table class="table table-item">
-        <tr >
-            <th>Skill</th>
-            <th>Level</th>
-        </tr>
-        <tr>
-            <td>January</td>
-            <td>$100</td>
-        </tr>
-        <tr>
-            <td>January</td>
-            <td>$100</td>
-        </tr>
-        <tr>
-            <td>January</td>
-            <td>$100</td>
-        </tr>
-    </table>
+    <div class="test">
+        <div>
+            <a href="/">سوپرمارکت</a>
+            <a href="/">بلاگ</a>
+            <a href="/">درباره ما</a>
+            <a href="/">تماس با ما</a>
+        </div>
+        <div>
+            <span>شهر خود را انتخاب کنید</span>
+        </div>
+        <span>hello</span>
+    </div>
+    <!-- <h3>سلام برنامه نویسی</h3>
+    <h1 class="title">Lorem </h1>
+    <h2>Lorem, ipsum dolor.</h2>
+    <div class="buttons">
+        <button>button1</button>
+        <button>button2</button>
+        <button>button3</button>
+    </div> -->
+    <div class="nav-logo">
+        <img class="logo" src="digikala.svg" alt="logo digikala">
+        <input class="search" type="text" placeholder="جستجو در دیجی کالا">
+    </div>
+    <div class="links">
+        <div class="link1">
+            <a href="/">دسته بندی ها</a>
+            <a href="/">شگفت انگیز</a>
+        </div>
+        <div class="">
+            <a href="/">سوپرمارکت</a>
+            <a href="/">بلاگ</a>
+            <a href="/">درباره ما</a>
+            <a href="/">تماس با ما</a>
+        </div>
+    </div>
+
+    <h3>خرید از دیجیکالا</h3>
 </body>
 
 </html>
