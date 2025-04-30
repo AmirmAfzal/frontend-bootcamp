@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            direction: rtl;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .call {
+            width: 100%;
+            background-color: #3ECF8E;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: white;
+            padding: 16px 0px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        .navbar {
+            background-color: #0C0C15;
+            padding: 32px 96px;
+        }
+
+        .link {
+            color: white;
+            font-size: 24px;
+            padding: 8px 16px;
+            border-radius: 999px;
+        }
+
+        .icon {
+            width: 40px;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-links{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 54px;
+        }
+        .link:hover{
+            background-color: #EC6060;
+        }
+        .navbar-actions{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+        }
+        .line{
+            width: 2px;
+            height: 20px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="tel:09059998731" class="call">☎️ مرکز تماس مشتریان : 91094400-021</a>
+
+    <div class="navbar">
+        <div class="navbar-links">
+            <img class="logo" src="licencemarket.webp" alt="licence market logo">
+            <a href="" class="link">خانه</a>
+            <a href="" class="link">خدمات</a>
+            <a href="" class="link">وبلاگ</a>
+            <a href="" class="link">درباره ما</a>
+        </div>
+        <div class="navbar-actions">
+            <img class="icon" src="search.png" alt="search icon">
+            <img class="icon" src="cart.png" alt="cart icon">
+            <a href="" class="link">عضویت</a>
+            <div class="line"></div>
+            <a href="" class="link">وارد شوید</a>
+        </div>
+    </div>
+</body>
+
+</html>
