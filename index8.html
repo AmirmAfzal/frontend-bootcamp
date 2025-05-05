@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            direction: rtl;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #bfbebebb;
+            width: 375px;
+            height: 600px;
+            border-radius: 16px;
+
+        }
+
+        .support {
+            width: 36px;
+            height: 36px;
+            border-radius: 999px;
+
+        }
+
+
+        .supporters {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .head {
+            background-color: rgb(239, 57, 78);
+            display: flex;
+            flex-direction: row;
+            padding: 16px 32px;
+            gap: 8px;
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+        }
+
+        .texts {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .texts span {
+            color: white;
+        }
+
+        .close {
+            background-color: rgb(0, 0, 0);
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            border-radius: 999px;
+        }
+
+        .chat {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            gap: 8px;
+            padding: 10px 16px;
+
+        }
+
+        .chat-text {
+            background-color: white;
+            padding: 8px 10px;
+            border-radius: 16px;
+        }
+
+        .cover {
+            opacity: 1;
+            /* display: none; */
+        }
+
+        .cover2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: 0;
+        }
+        .cover2:hover{
+            opacity: 1;
+        }
+        .images{
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <div class="images">
+        <img class="cover" src="cover2.webp" alt="">
+        <img class="cover2" src="cover1.webp" alt="">
+
+    </div>
+
+    <!-- <div class="container">
+        <div class="head">
+            <div class="supporters">
+                <img class="support" src="support.jpg" alt="support image">
+                <img class="support" style="margin-right:-20px ;" src="support.jpg" alt="support image">
+                <img class="support" style="margin-right:-20px ;" src="support.jpg" alt="support image">
+            </div>
+            <div class="texts">
+                <span>چت آنلاین لایسنس مارکت</span>
+                <span style="font-size: 12px;">مرکز تماس: 91094400-021</span>
+            </div>
+
+            <img class="close" src="x.png" alt="close">
+        </div>
+
+        <div class="chat">
+            <img class="support" src="support.jpg" alt="support image">
+            <p class="chat-text">
+                چت آنلاین تنها پلتفرم مشاوره پیش از خرید میباشد. جهت دریافت "پشتیبانی پس از خرید"، فقط از طریق "پرتال
+                مشتریان" اقدام
+                فرمایید
+            </p>
+        </div>
+    </div> -->
+
+</body>
+
+</html>
