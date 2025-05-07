@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            direction: rtl;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .price-section {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .title {
+            font-size: 20px;
+            margin-top: 16px;
+        }
+
+        .product-section {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            overflow-x: scroll;
+            width: 500px;
+
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: blueviolet;
+            margin-top: 100px;
+            overflow: hidden;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border-radius: 999px;
+            position: absolute;
+            top: -50px;
+            right: 0px;
+        }
+
+        .navbar {
+            background-color: black;
+            padding: 16px 96px;
+        }
+
+        .link {
+            color: white;
+            font-size: 24px;
+        }
+
+        .menu {
+            display: none;
+            flex-direction: row;
+            gap: 16px;
+            background-color: white;
+            position: absolute;
+            padding: 16px 8px 16px 96px;
+            border-radius: 16px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .menu a {
+            color: black;
+        }
+
+        .menu-container:hover .menu {
+            display: flex;
+        }
+        .menu-links{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="menu-container" style="position: relative;">
+            <a class="link" href="">درباره ما</a>
+            <div class="menu">
+                <div class="menu-links">
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                </div>
+                <div class="menu-links" style="background-color: aquamarine;">
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                </div>
+                <div class="menu-links" style="background-color: rgb(255, 240, 127);">
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                </div>
+                <div class="menu-links" style="background-color: rgb(80, 226, 7);">
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                    <a class="link" href="">خدمات ما</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container">
+        <div class="circle"></div>
+    </div> -->
+    <!-- <div class="product-section">
+        <div class="product-card">
+            <img src="cover2.webp" alt="master class">
+            <span class="title">خرید اکانت MasterClass مسترکلاس شارژ آنی (91% تخفیف)</span>
+            <div class="price-section">
+                <s>110,000</s>
+                <span>95,000 تومان</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="cover2.webp" alt="master class">
+            <span class="title">خرید اکانت MasterClass مسترکلاس شارژ آنی (91% تخفیف)</span>
+            <div class="price-section">
+                <s>110,000</s>
+                <span>95,000 تومان</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="cover2.webp" alt="master class">
+            <span class="title">خرید اکانت MasterClass مسترکلاس شارژ آنی (91% تخفیف)</span>
+            <div class="price-section">
+                <s>110,000</s>
+                <span>95,000 تومان</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="cover2.webp" alt="master class">
+            <span class="title">خرید اکانت MasterClass مسترکلاس شارژ آنی (91% تخفیف)</span>
+            <div class="price-section">
+                <s>110,000</s>
+                <span>95,000 تومان</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="cover2.webp" alt="master class">
+            <span class="title">خرید اکانت MasterClass مسترکلاس شارژ آنی (91% تخفیف)</span>
+            <div class="price-section">
+                <s>110,000</s>
+                <span>95,000 تومان</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="cover2.webp" alt="master class">
+            <span class="title">خرید اکانت MasterClass مسترکلاس شارژ آنی (91% تخفیف)</span>
+            <div class="price-section">
+                <s>110,000</s>
+                <span>95,000 تومان</span>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+
+</html>
