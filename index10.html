@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            direction: rtl;
+            padding: 0px;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar {
+            position: relative;
+        }
+
+        .navbar:hover .menu {
+            display: flex;
+        }
+
+        .menu {
+            display: none;
+            flex-direction: row;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            height: 300px;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            width: 100%;
+        }
+
+        .catagory {
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            width: 20%;
+            direction: ltr;
+        }
+
+        .category-item {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 16px;
+            background-color: rgb(196, 196, 196);
+            padding: 8px 16px;
+        }
+
+        .category-item:hover {
+            background-color: white;
+        }
+
+        .category-item img {
+            width: 24px;
+        }
+
+        .category-item span {
+            color: rgb(0, 0, 0);
+        }
+
+        .category-item span:hover {
+            color: #ef4056;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            overflow-y: scroll;
+            width: 80%;
+            direction: ltr;
+        }
+
+        .all-products {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+        }
+
+        .all-products a {
+            color: #008eb2;
+        }
+
+        .all-products img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .link-group {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .link-col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-link {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            align-items: center;
+            margin-top: 16px;
+        }
+
+        .title-link div {
+            background-color: #ef4056;
+            width: 2px;
+            height: 16px;
+        }
+
+        .title-link img {
+            width: 10px;
+            height: 10px;
+        }
+
+        .link {
+            font-size: 12px;
+            margin-top: 8px;
+            color: rgb(116, 116, 116);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>دسته بندی کالاها</h1>
+        <div class="menu">
+            <div class="catagory">
+                <a href="/" class="category-item">
+                    <img src="phone.png" alt="icon">
+                    <span>موبایل</span>
+                </a>
+                <a href="/" class="category-item">
+                    <img src="phone.png" alt="icon">
+                    <span>موبایل</span>
+                </a>
+                <a href="/" class="category-item">
+                    <img src="phone.png" alt="icon">
+                    <span>موبایل</span>
+                </a>
+                <a href="/" class="category-item">
+                    <img src="phone.png" alt="icon">
+                    <span>موبایل</span>
+                </a>
+                <a href="/" class="category-item">
+                    <img src="phone.png" alt="icon">
+                    <span>موبایل</span>
+                </a>
+                <a href="/" class="category-item">
+                    <img src="phone.png" alt="icon">
+                    <span>موبایل</span>
+                </a>
+                <a href="/" class="category-item">
+                    <img src="phone.png" alt="icon">
+                    <span>موبایل</span>
+                </a>
+                <a href="/" class="category-item">
+                    <img src="phone.png" alt="icon">
+                    <span>موبایل</span>
+                </a>
+                <a href="/" class="category-item">
+                    <img src="phone.png" alt="icon">
+                    <span>موبایل</span>
+                </a>
+                <a href="/" class="category-item">
+                    <img src="phone.png" alt="icon">
+                    <span>موبایل</span>
+                </a>
+                <a href="/" class="category-item">
+                    <img src="phone.png" alt="icon">
+                    <span>موبایل</span>
+                </a>
+            </div>
+            <!-- Links Start -->
+            <div class="links">
+                <div class="all-products">
+                    <a class="" href="">همه محصولات موبایل</a>
+                    <img src="arrow.png" alt="arrow">
+                </div>
+
+                <div class="link-group">
+                    <div class="link-col">
+                        <a href="/" class="title-link">
+                            <div class=""></div>
+                            <span class="" href="">برند های مختلف گوشی موبایل</span>
+                            <img src="arrow-black.png" alt="arrow">
+                        </a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a class="link" href="/">گوشی سامسونگ</a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a class="link" href="/">گوشی سامسونگ</a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a class="link" href="/">گوشی سامسونگ</a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a class="link" href="/">گوشی سامسونگ</a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a class="link" href="/">گوشی سامسونگ</a>
+                        <a href="/" class="title-link">
+                            <div class=""></div>
+                            <span class="" href="">برند های برتر</span>
+                            <img src="arrow-black.png" alt="arrow">
+                        </a>
+                        <a class="link" href="/">سامسونگ</a>
+                        <a class="link" href="/">اپل</a>
+                        <a class="link" href="/">شیاعومی</a>
+                        <a class="link" href="/">سامسونگ</a>
+                        <a class="link" href="/">اپل</a>
+                        <a class="link" href="/">شیاعومی</a>
+                    </div>
+                    <div class="link-col">
+                        <a href="/" class="title-link">
+                            <div class=""></div>
+                            <span class="" href="">برند های مختلف گوشی موبایل</span>
+                            <img src="arrow-black.png" alt="arrow">
+                        </a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a class="link" href="/">گوشی سامسونگ</a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a class="link" href="/">گوشی سامسونگ</a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a href="/" class="title-link">
+                            <div class=""></div>
+                            <span class="" href="">برند های برتر</span>
+                            <img src="arrow-black.png" alt="arrow">
+                        </a>
+                        <a class="link" href="/">سامسونگ</a>
+                        <a class="link" href="/">اپل</a>
+                        <a class="link" href="/">شیاعومی</a>
+                        <a class="link" href="/">سامسونگ</a>
+                        <a class="link" href="/">اپل</a>
+                        <a class="link" href="/">شیاعومی</a>
+                    </div>
+                    <div class="link-col">
+                        <a href="/" class="title-link">
+                            <div class=""></div>
+                            <span class="" href="">برند های مختلف گوشی موبایل</span>
+                            <img src="arrow-black.png" alt="arrow">
+                        </a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a class="link" href="/">گوشی سامسونگ</a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a class="link" href="/">گوشی سامسونگ</a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a class="link" href="/">گوشی سامسونگ</a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a class="link" href="/">گوشی سامسونگ</a>
+                        <a class="link" href="/">گوشی آیفون</a>
+                        <a class="link" href="/">گوشی سامسونگ</a>
+                        <a href="/" class="title-link">
+                            <div class=""></div>
+                            <span class="" href="">برند های برتر</span>
+                            <img src="arrow-black.png" alt="arrow">
+                        </a>
+                        <a class="link" href="/">سامسونگ</a>
+                        <a class="link" href="/">اپل</a>
+                        <a class="link" href="/">شیاعومی</a>
+                        <a class="link" href="/">سامسونگ</a>
+                        <a class="link" href="/">اپل</a>
+                        <a class="link" href="/">شیاعومی</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Links End -->
+        </div>
+    </div>
+    <h1>محصولات</h1>
+</body>
+
+</html>
